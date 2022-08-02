@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+
+/* Custom Properties */
+:root {
+    --clr-primary: rgb(9, 9, 9);
+    --clr-secondary: rgb(231, 231, 231);
+    --clr-ternary: rgb(173, 99, 251);
+}
+
+
+* {
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.container {
+    margin: 0 20px;
+}
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    margin: 50px 0 0 0;
+}
+
+.top {
+    margin: 0 auto;
+    width: 280px;
+    height: 35vh;
+    background-color: var(--clr-primary);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#compute {
+    color: rgb(95, 95, 95);
+    font-size: 40px;
+    text-align: right;
+    position: relative;
+    top: 45%;
+    right: 23px;
+    font-size: 25px;
+}
+
+#display {
+    color: var(--clr-secondary);
+    font-size: 40px;
+    text-align: right;
+    position: relative;
+    top: 40%;
+    right: 20px;
+}
+
+.bottom {
+    padding: 20px 0;
+    background: var(--clr-secondary);
+    height: 350px;
+    width: 280px;
+    display: grid;
+    grid-template-columns: repeat(4,60px);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+button {
+    width:45px;
+    height: 45px;
+    background-color: var(--clr-secondary);
+    border-radius: 10px;
+    border: none;
+    box-shadow: 5px 5px 20px 5px rgb(197, 197, 197);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(214, 214, 214);
+    transition: .3s;
+}
+
+.equals {
+    background-color: var(--clr-ternary);
+    color:rgb(231, 231, 231);
+}
